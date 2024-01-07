@@ -1,0 +1,382 @@
+
+
+.filtercontainer {
+
+    background-color: var(--background-card);
+    box-shadow: 4px 4px 71px rgba(0, 0, 0, 0.05);
+    width: 280px;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: var(--padding-base) 14px;
+    gap: 28px;
+    border-radius: var(--br-7xs);
+  display: flex;
+
+  align-items: center;
+  box-sizing: border-box;
+
+
+
+
+}
+
+  .filter {
+    display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 252px;
+  flex-direction: column;
+  gap: 24px;
+
+
+  }
+
+  .switchfield {
+    display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+  width: 252px;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  border: 1px solid var(--text-purple);
+  }
+  
+  .switchfield input {
+    position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
+  }
+  
+  .switchfield label {
+    color: var(--Text-black, #1A1A1A);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    line-height: normal;
+  padding: 8px;
+  margin-right: -1px;
+  flex: 1;
+  transition: all 0.1s ease-in-out;
+  }
+  
+  .switchfield label:hover {
+    cursor: pointer;
+  }
+  
+  .switchfield input:checked + label {
+    color: var(--Text-white, #FAFAFA);
+    background: var(--text-purple);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600; 
+    line-height: normal;
+  }
+  
+  .switchfield label:first-of-type {
+  border-right: 1px solid var(--text-purple);
+    
+  }
+  
+  .switchfield label:last-of-type {
+border-left: 1px solid var(--text-purple);
+    border-right: 1px solid var(--text-purple);
+  }
+  
+
+
+  .selector {
+    display: flex;
+    width: 252px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+    
+  }
+  
+  
+  .label {
+    color: var(--Text-black, #1A1A1A);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    padding-left: 2px;
+    line-height: normal;
+  }
+  
+  .select, .range .select {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    border-radius: 6px;
+    background-color: transparent;
+    background: url("..//..//..//public/icondropdown.svg") no-repeat right;
+    background-position-x: 98%;
+   min-width: 48px;
+border: 1px solid var(--Text-gray, #D4D4D4);
+  }
+  
+.selectfocused {
+border-color: #620985;
+}
+
+.option{
+ 
+  display: flex;
+  width: 252px;
+  height: 40px;
+  padding: 4px 8px;
+  align-items: center;
+  gap: 132px;
+  background: var(--Background-full-page, #FBFBFB);
+  color: var(--Text-black, #1A1A1A);
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+
+.range .option {
+
+width: auto;
+
+}
+
+.option:active {
+
+background-color: #d4d4d4b4;
+
+}
+.optionfocused {
+background-color: #D4D4D4;
+
+}
+
+.range {
+
+    display: flex;
+    width: 252px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 8px;
+
+}
+
+
+
+.range .inputs {
+
+display: flex;
+flex-direction: row;
+gap: 8px;
+width: 100%;
+justify-content: space-between;
+}
+
+.inputs .select {
+width: 120px;
+
+
+}
+
+
+
+  
+
+
+.range .number {
+    width: 120px;
+    height: 40px;
+    padding: 4px 8px;
+    gap: 10px;
+    flex-shrink: 0;
+    background: transparent;
+
+
+}
+
+
+
+
+  .checks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+
+
+  }
+
+  .checks div {
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+
+  }
+
+  .checkContainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding-left: 35px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    color: var(--Text-black, #1A1A1A);
+    font-family: Inter;
+    font-size: 14px;
+     font-style: normal;
+     font-weight: 500;
+     line-height: normal;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+
+  .checkContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  
+  .checkmark {
+    position: absolute;
+    left: 0;
+    display: flex;
+    width: 28px;
+    height: 28px;
+    align-items: flex-start;
+    gap: 11.954px;
+    background:url("../../../public/shape.svg") no-repeat center;
+    background-size: cover;
+  }
+  
+  
+  .checkContainer:hover input ~ .checkmark {
+   fill: #D4D4D4;
+  }
+  
+
+  .checkContainer input:checked ~ .checkmark {
+    border-radius: 5px;
+    background-color: var(--text-purple);
+    background-image: url("../../../public/vector-1.svg");
+    background-size: auto;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  .input {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+  }
+
+  .number {
+    display: inline-block;
+    width: 48%;
+    height: 2rem;
+    border: 1px solid var(--gray);
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+    box-sizing: border-box;
+    font-family: inherit;
+  }
+  
+ 
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  
+  
+
+  .text {
+    display: inline-block;
+    color: var(--black);
+    font-weight: bold;
+  }
+  
+ 
+  .button {
+    display: flex;
+width: 252px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+  }
+  
+ 
+  .apply {
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+background: var(--Button-default-purple, #620985);
+color: var(--Text-white, #FAFAFA);
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 24px; /* 150% */
+  }
+  

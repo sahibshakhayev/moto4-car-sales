@@ -1,0 +1,103 @@
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 118px;
+    height: 32.29px;
+    object-fit: cover;
+  }
+  .logo-con {
+    position: relative;
+    width: 180px;
+    height: 32px;
+  }
+  .pagename-con {
+    padding: var(--padding-5xs) var(--padding-xl);
+  }
+  .page-names,
+  .pagename-con {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .lang {
+    position: relative;
+  }
+  .lang {
+    text-decoration: underline;
+    font-weight: 500;
+  }
+  .langs,
+  .user-pages,
+  .pred-adv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-adv * {
+  text-decoration: none;
+  color: var(--text-purple);
+  
+  }
+  .langs {
+    padding: var(--padding-9xs);
+  }
+  .user-pages,
+  .pred-adv {
+    align-self: stretch;
+    gap: var(--gap-base);
+  }
+  .pred-adv {
+    border-radius: var(--br-7xs);
+    padding: var(--padding-5xs) var(--padding-base);
+    gap: var(--gap-9xs);
+  }
+  .add-adv {
+    position: relative;
+    line-height: 28px;
+  }
+  .add-adv b {
+    align-self: stretch;
+    border-radius: var(--br-7xs);
+    background-color: var(--text-purple);
+    justify-content: center;
+    padding: var(--padding-5xs) var(--padding-base);
+    color: var(--background-card);
+  }
+  .add-adv b,
+  .nav-adv,
+  .page-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .nav-adv {
+    align-self: stretch;
+    justify-content: center;
+    gap: var(--gap-9xs);
+    color: var(--text-purple);
+  }
+  .page-links {
+    width: 980px;
+    height: 48px;
+    justify-content: flex-end;
+    gap: 32px;
+  }
+  .navbar {
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-full-page);
+    display: flex;
+    flex-direction: row;
+    padding: 24px var(--padding-111xl);
+    gap: var(--gap-xl);
+  }
+  
+  .pagename-con * {
+  text-decoration: none;
+  color: black;
+  
+  }
