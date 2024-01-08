@@ -1,0 +1,172 @@
+.cardetail {
+  width: 100%;
+  height: 100%;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+/* Left */
+.left {
+  width: 8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.left svg {
+  width: 100%;
+  height: 100%;
+}
+/* Center */
+.center {
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  justify-content: flex-start;
+}
+.center svg {
+  width: 100%;
+  height: 100%;
+}
+
+.center .modelHead {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.center .modelHead .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.center .modelHead .left span:first-child {
+  color: var(--Text-black, #1a1a1a);
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+.center .modelHead .left span:last-child {
+  color: var(--Text-black, #1a1a1a);
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.center .modelHead .right {
+  width: 50%;
+  height: 100%;
+}
+.center .modelHead .right .priceCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.center .modelHead .right .priceCard span {
+  color: var(--Text-purple, #620985);
+  font-family: Mulish;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+}
+.center .modelHead .right .estimateCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.center .modelHead .right svg {
+  width: 24px;
+  height: 24px;
+}
+.center .estimate {
+  color: var(--Text-black, #1a1a1a);
+  font-family: Mulish;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+}
+/* Right */
+.right {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.right h2 {
+  color: #1a1a1a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: 21px;
+}
+
+.right span {
+  color: #000;
+  font-family: Mulish;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.right ul {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.right li {
+  height: 44px;
+  list-style: none;
+  padding: 8px 4px;
+  text-decoration: none;
+  color: #000;
+  font-family: Mulish;
+  display: flex;
+  justify-content: space-between;
+}
+
+.purple {
+  background-color: #faefff;
+}
+
+.contact {
+  width: 100%;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  margin-top: 31px;
+}
+.contactButton {
+  width: 85%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  background-color: #620985;
+  color: #fff;
+}
+.like {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scale: 1.2;
+}
+.like img {
+  width: 40%;
+  height: 50%;
+}

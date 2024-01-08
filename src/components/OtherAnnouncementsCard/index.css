@@ -1,0 +1,63 @@
+.otherCarContainer {
+  width: 90%;
+  height: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--Stroke-gray, #ebebeb);
+  background: var(--Background-card, #fafafa);
+  padding: 8px;
+  gap: 8px;
+}
+.otherCarContainer .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.otherCarContainer .desc {
+  display: flex;
+  flex-direction: column;
+}
+.otherCarContainer .desc .modelName {
+  color: var(--Text-black, #1a1a1a);
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.otherCarContainer .desc .features span {
+  color: var(--Text-black, #1a1a1a);
+  text-overflow: ellipsis;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.otherCarContainer .price {
+  margin-top: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.otherCarContainer .price span:first-child {
+  color: var(--Text-purple, #620985);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.otherCarContainer .price span:last-child {
+  display: flex;
+  align-items: center;
+  color: var(--Text-black, #1a1a1a);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
