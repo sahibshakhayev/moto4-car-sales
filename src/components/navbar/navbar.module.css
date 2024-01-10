@@ -91,6 +91,7 @@
     justify-content: center;
     background-color: var(--background-full-page);
     display: flex;
+    width: 100%;
     flex-direction: row;
     padding: 24px var(--padding-111xl);
     gap: var(--gap-xl);
