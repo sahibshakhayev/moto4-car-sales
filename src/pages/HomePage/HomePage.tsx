@@ -199,16 +199,16 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-5@2x.png"
+                      src="/assets/img/image-5@2x.png"
                     />
                   </div>
                   <div className="salon">
                     <div className="text-4">Salon</div>
                   </div>
                   <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/union.svg" />
+                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -219,7 +219,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">56.400</b>
-                      <img className="icon" alt="" src="/icondollar.svg" />
+                      <img className="icon" alt="" src="/assets/icons/icondollar.svg" />
                     </div>
                   </div>
                 </div>
@@ -230,11 +230,11 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-7@2x.png"
+                      src="/assets/img/image-7@2x.png"
                     />
                   </div>
                   
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -245,7 +245,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">23.000</b>
-                      <img className="icon" alt="" src="/iconeuro.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconeuro.svg" />
                     </div>
                   </div>
                 </div>
@@ -256,13 +256,13 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-17@2x.png"
+                      src="/assets/img/image-17@2x.png"
                     />
                   </div>
                   <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/union.svg" />
+                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -273,7 +273,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">19.700</b>
-                      <img className="icon" alt="" src="/iconmanat.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
                     </div>
                   </div>
                 </div>
@@ -284,10 +284,10 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-8@2x.png"
+                      src="/assets/img/image-8@2x.png"
                     />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -298,7 +298,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">120.000</b>
-                      <img className="icon" alt="" src="/iconeuro.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconeuro.svg" />
                     </div>
                   </div>
                 </div>
@@ -309,13 +309,13 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-9@2x.png"
+                      src="/assets/img/image-9@2x.png"
                     />
                   </div>
                   <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/union2.svg" />
+                    <img className="union-icon" alt="" src="/assets/icons/union2.svg" />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -326,7 +326,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">139.000</b>
-                      <img className="icon" alt="" src="/iconeuro.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconeuro.svg" />
                     </div>
                   </div>
                 </div>
@@ -337,13 +337,13 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-15@2x.png"
+                      src="/assets/img/image-15@2x.png"
                     />
                   </div>
                   <div className="salon">
                     <div className="text-4">Salon</div>
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -354,7 +354,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">52.600</b>
-                      <img className="icon" alt="" src="/iconmanat.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
                     </div>
                   </div>
                 </div>
@@ -365,16 +365,16 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-16@2x.png"
+                      src="/assets/img/image-16@2x.png"
                     />
                   </div>
                   <div className="salon">
                     <div className="text-4">Salon</div>
                   </div>
                   <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/union.svg" />
+                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -385,7 +385,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">86.700</b>
-                      <img className="icon" alt="" src="/iconmanat.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
                     </div>
                   </div>
                 </div>
@@ -396,10 +396,10 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-13@2x.png"
+                      src="/assets/img/image-13@2x.png"
                     />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -410,7 +410,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">95.000</b>
-                      <img className="icon" alt="" src="/icondollar1.svg" />
+                      <img className="icon" alt="" src="/assets/icons/icondollar1.svg" />
                     </div>
                   </div>
                 </div>
@@ -421,13 +421,13 @@ const HomePage: FunctionComponent = () => {
                     <img
                       className="image-car"
                       alt=""
-                      src="/image-11@2x.png"
+                      src="/assets/img/image-11@2x.png"
                     />
                   </div>
                   <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/union.svg" />
+                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
                   </div>
-                  <img className="heart-icon" alt="" src="/heart-icon.svg" />
+                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
                 </div>
                 <div className="about-car">
                   <div className="car-datas">
@@ -438,7 +438,7 @@ const HomePage: FunctionComponent = () => {
                     <div className="text-4">{`Qiymət: `}</div>
                     <div className="car-price">
                       <b className="text-3">148.000</b>
-                      <img className="icon" alt="" src="/iconmanat.svg" />
+                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
                     </div>
                   </div>
                 </div>

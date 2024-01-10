@@ -12,7 +12,7 @@ const Navbar:FunctionComponent = () => {
     return (
         <div className={styles.navbar}>
         <div className={styles["logo-con"]}>
-          <img className="logo" alt="" src="/image-4@2x.png" />
+          <img className="logo" alt="" src="/assets/img/image-4@2x.png" />
         </div>
         <div className={styles["page-links"]}>
           <div className={styles["page-names"]}>
@@ -30,8 +30,8 @@ const Navbar:FunctionComponent = () => {
             </div>
           </div>
           <div className={styles["user-pages"]}>
-           <Link to={"/user"}><img className={styles.icon} alt="" src="/iconuser.svg" /></Link>
-            <Link to={"/liked"}><img className={styles.icon} alt="" src="/iconheart.svg" /></Link>
+           <Link to={"/user"}><img className={styles.icon} alt="" src="/assets/icons/iconuser.svg" /></Link>
+            <Link to={"/liked"}><img className={styles.icon} alt="" src="/assets/icons/iconheart.svg" /></Link>
             <div className={styles.langs}>
               <div className={styles.lang}>AZ</div>
             </div>
@@ -39,7 +39,7 @@ const Navbar:FunctionComponent = () => {
           <div className={styles["nav-adv"]}>
             <Link to={"https://motofour.streamlit.app/"}>
             <div className={styles["pred-adv"]}>
-              <img className={styles.icon} alt="" src="/iconplus.svg" />
+              <img className={styles.icon} alt="" src="/assets/icons/iconplus.svg" />
               <b className={styles["text-3"]}>Proqnozlu Elan</b>
             </div>
             </Link>
