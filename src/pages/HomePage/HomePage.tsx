@@ -14,7 +14,7 @@ import axios from 'axios';
 
 const HomePage: FunctionComponent = () => {
   
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   useEffect(() => {
   
@@ -38,8 +38,10 @@ const HomePage: FunctionComponent = () => {
         status: "new",
         predicted: true,
         value:2.0,
-        price: 56.400,
-        currency: "usd"
+        price: 56400,
+        currency: "usd",
+        liked:true,
+        image_src:"/assets/img/image-5@2x.png"
       },
       {
         id: 5656,
@@ -50,8 +52,10 @@ const HomePage: FunctionComponent = () => {
         status: "driven",
         predicted: false,
         value:1.0,
-        price: 23.000,
-        currency: "eur"
+        price: 23000,
+        currency: "eur",
+        liked:false,
+        image_src:"/assets/img/image-7@2x.png"
       },
       {
         id: 9090,
@@ -62,8 +66,10 @@ const HomePage: FunctionComponent = () => {
         status: "driven",
         predicted: true,
         value:1.0,
-        price: 19.700,
-        currency: "azn"
+        price: 19700,
+        currency: "azn",
+        liked:true,
+        image_src:"/assets/img/image-17@2x.png"
       },
       {
         id: 1010,
@@ -75,7 +81,10 @@ const HomePage: FunctionComponent = () => {
         predicted: false,
         value:3.0,
         price: 12000,
-        currency: "eur"
+        currency: "eur",
+        liked:false,
+        image_src:"/assets/img/image-8@2x.png"
+
       },
       {
         id: 1212,
@@ -87,7 +96,9 @@ const HomePage: FunctionComponent = () => {
         predicted: true,
         value:3.5,
         price: 13900,
-        currency: "eur"
+        currency: "eur",
+        liked:false,
+        image_src:"/assets/img/image-9@2x.png"
       },
       {
         id: 1313,
@@ -98,8 +109,10 @@ const HomePage: FunctionComponent = () => {
         status: "new",
         predicted: false,
         value:2.0,
-        price: 52.600,
-        currency: "azn"
+        price: 52600,
+        currency: "azn",
+        liked:false,
+        image_src:"/assets/img/image-15@2x.png"
       },
       {
         id: 1414,
@@ -110,8 +123,10 @@ const HomePage: FunctionComponent = () => {
         status: "new",
         predicted: true,
         value:3.0,
-        price: 86.700,
-        currency: "azn"
+        price: 86700,
+        currency: "azn",
+        liked:false,
+        image_src:"/assets/img/image-16@2x.png"
       },
       {
         id: 1515,
@@ -123,7 +138,9 @@ const HomePage: FunctionComponent = () => {
         predicted: false,
         value:2.0,
         price: 95000,
-        currency: "usd"
+        currency: "usd",
+        liked:false,
+        image_src:"/assets/img/image-13@2x.png"
       },
       {
         id: 1616,
@@ -135,11 +152,13 @@ const HomePage: FunctionComponent = () => {
         predicted: true,
         value:0,     
         price: 148000,
-        currency: "azn"
+        currency: "azn",
+        liked:false,
+        image_src:"/assets/img/image-11@2x.png"
       }
     ];
     
-  
+  setData(cars)
   
   
   
@@ -177,7 +196,46 @@ const HomePage: FunctionComponent = () => {
    
   };
   
+  const carItems = data.map((car) =>
+  <>
+  <div key={car.id} className="card">
+  <div className="carimage">
+    <div className="carphoto">
+      <img
+        className="image-car"
+        alt=""
+        src={car.image_src}
+      />
+    </div>
+    {car.used == "new" && 
+    <div className="salon">
+      <div className="text-4">Salon</div>
+    </div>
+     }
 
+     {car.predicted && 
+    <div className="prediction-icon">
+      <img className="union-icon" alt="union" src="/assets/icons/union.svg" />
+    </div>
+     }
+    <img className="heart-icon" alt="liked-icon"  src={car.liked ? "/assets/icons/heart.svg" : "/assets/icons/heart-icon.svg"} />
+  </div>
+  <div className="about-car">
+    <div className="car-datas">
+      <div className="brand-model">{car.brand + " " + car.model}</div>
+      <div className="car-props">{car.value +" L, " + car.driven + " km, " + car.year}</div>
+    </div>
+    <div className="price-con">
+      <div className="text-4">{`Qiymət: `}</div>
+      <div className="car-price">
+        <b className="text-3">{car.price}</b>
+        <img className="icon" alt="" src={"/assets/icons/" + car.currency +".svg"} />
+      </div>
+    </div>
+  </div>
+</div>
+ </> 
+);
 
 
   return (
@@ -193,256 +251,7 @@ const HomePage: FunctionComponent = () => {
           <div className="page-content">
             <div className="new-adv">Yeni Elanlar</div>
             <div className="all-cars">
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-5@2x.png"
-                    />
-                  </div>
-                  <div className="salon">
-                    <div className="text-4">Salon</div>
-                  </div>
-                  <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">{`Porsche Taycan `}</div>
-                    <div className="car-props">2.0 L, 0 km, 2023</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">56.400</b>
-                      <img className="icon" alt="" src="/assets/icons/icondollar.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-7@2x.png"
-                    />
-                  </div>
-                  
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Toyota Corolla</div>
-                    <div className="car-props">1.0 L, 26.000 km, 2021</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">23.000</b>
-                      <img className="icon" alt="" src="/assets/icons/iconeuro.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-17@2x.png"
-                    />
-                  </div>
-                  <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Abarth 595</div>
-                    <div className="car-props">1.0 L, 2.000 km, 2022</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">19.700</b>
-                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-8@2x.png"
-                    />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Mercedes AMG</div>
-                    <div className="car-props">3.0 L, 263.000 km, 2020</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">120.000</b>
-                      <img className="icon" alt="" src="/assets/icons/iconeuro.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-9@2x.png"
-                    />
-                  </div>
-                  <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/assets/icons/union2.svg" />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Ford Mustang</div>
-                    <div className="car-props">3.5 L, 68.000 km, 2020</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">139.000</b>
-                      <img className="icon" alt="" src="/assets/icons/iconeuro.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-15@2x.png"
-                    />
-                  </div>
-                  <div className="salon">
-                    <div className="text-4">Salon</div>
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Honda Civic</div>
-                    <div className="car-props">2.0 L, 0 km, 2021</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">52.600</b>
-                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-16@2x.png"
-                    />
-                  </div>
-                  <div className="salon">
-                    <div className="text-4">Salon</div>
-                  </div>
-                  <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Changan Uni-K</div>
-                    <div className="car-props">3.0 L, 0 km, 2022</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">86.700</b>
-                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-13@2x.png"
-                    />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">BMW M8</div>
-                    <div className="car-props">2.0 L, 12.000 km, 2023</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">95.000</b>
-                      <img className="icon" alt="" src="/assets/icons/icondollar1.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="card">
-                <div className="carimage">
-                  <div className="carphoto">
-                    <img
-                      className="image-car"
-                      alt=""
-                      src="/assets/img/image-11@2x.png"
-                    />
-                  </div>
-                  <div className="prediction-icon">
-                    <img className="union-icon" alt="" src="/assets/icons/union.svg" />
-                  </div>
-                  <img className="heart-icon" alt="" src="/assets/icons/heart-icon.svg" />
-                </div>
-                <div className="about-car">
-                  <div className="car-datas">
-                    <div className="brand-model">Dodge Challenger</div>
-                    <div className="car-props">0 L, 85.000 km, 2022</div>
-                  </div>
-                  <div className="price-con">
-                    <div className="text-4">{`Qiymət: `}</div>
-                    <div className="car-price">
-                      <b className="text-3">148.000</b>
-                      <img className="icon" alt="" src="/assets/icons/iconmanat.svg" />
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {carItems}
             </div>
           </div>
         </div>
