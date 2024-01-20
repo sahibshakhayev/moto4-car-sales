@@ -2,10 +2,11 @@
 import { FunctionComponent, useState, useCallback, useEffect } from "react";
 import "../../global.css"
 import "./HomePage.css";
-import { Link } from "react-router-dom";
 import Filter from "../../components/filter/Filter";
 import Navbar from "../../components/navbar/Navbar";
 import axios from 'axios';
+import Card from "../../components/card/Card";
+import React from "react";
 
 
 
@@ -196,45 +197,8 @@ const HomePage: FunctionComponent = () => {
    
   };
   
-  const carItems = data.map((car) =>
-  <>
-  <div key={car.id} className="card">
-  <div className="carimage">
-    <div className="carphoto">
-      <img
-        className="image-car"
-        alt=""
-        src={car.image_src}
-      />
-    </div>
-    {car.used == "new" && 
-    <div className="salon">
-      <div className="text-4">Salon</div>
-    </div>
-     }
-
-     {car.predicted && 
-    <div className="prediction-icon">
-      <img className="union-icon" alt="union" src="/assets/icons/union.svg" />
-    </div>
-     }
-    <img className="heart-icon" alt="liked-icon"  src={car.liked ? "/assets/icons/heart.svg" : "/assets/icons/heart-icon.svg"} />
-  </div>
-  <div className="about-car">
-    <div className="car-datas">
-      <div className="brand-model">{car.brand + " " + car.model}</div>
-      <div className="car-props">{car.value +" L, " + car.driven + " km, " + car.year}</div>
-    </div>
-    <div className="price-con">
-      <div className="text-4">{`Qiymət: `}</div>
-      <div className="car-price">
-        <b className="text-3">{car.price}</b>
-        <img className="icon" alt="" src={"/assets/icons/" + car.currency +".svg"} />
-      </div>
-    </div>
-  </div>
-</div>
- </> 
+  const carItems = data.map((carItem) =>
+  <Card car={carItem}></Card>
 );
 
 

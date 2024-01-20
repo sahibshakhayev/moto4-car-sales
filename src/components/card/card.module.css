@@ -1,0 +1,132 @@
+.image-car {
+    object-fit: cover;
+  }
+  .carphoto,
+  .image-car {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: var(--br-7xs);
+    width: 264px;
+    height: 210px;
+  }
+  .salon {
+    position: absolute;
+    top: 70.59px;
+    left: -36px;
+    background-color: var(--salon-yellow);
+    width: 159.95px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-8xs) var(--padding-3xs);
+    box-sizing: border-box;
+    transform: rotate(-39.9deg);
+    transform-origin: 0 0;
+  }
+  .union-icon {
+    position: relative;
+    width: 22.62px;
+    height: 26.9px;
+  }
+  .prediction-icon {
+    position: absolute;
+    top: 175px;
+    left: 0;
+    border-radius: 0 var(--br-7xs) 0 var(--br-7xs);
+    background-color: var(--prediction-green);
+    width: 54px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-9xs);
+    box-sizing: border-box;
+  }
+  .heart-icon {
+    position: absolute;
+    top: 8px;
+    left: 228px;
+    width: 28px;
+    height: 28px;
+  }
+  .carimage {
+    position: relative;
+    width: 264px;
+    height: 210px;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .brand-model {
+    font-weight: 600;
+  }
+  .car-props,
+  .brand-model {
+    align-self: stretch;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .car-datas {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: var(--gap-10xs);
+  }
+  
+  .car-price {
+    flex-direction: row;
+    justify-content: center;
+    color: var(--text-black);
+  }
+  .about-car,
+  .car-price,
+  .price-con {
+    display: flex;
+    align-items: center;
+  }
+  .price-con {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: var(--font-size-lg);
+    color: var(--text-purple);
+  }
+
+  .price-con .text-4 {
+    color: var(--Text-purple, #620985);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+  }
+  .about-car {
+    width: 264px;
+    height: 77px;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--gap-xs);
+    font-size: var(--font-size-base);
+    color: var(--text-black);
+  }
+  .card {
+  
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: var(--br-7xs);
+    background-color: var(--background-card);
+    border: 1px solid var(--stroke-gray);
+    width: 280px;
+    height: 311px;
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-5xs);
+    gap: var(--gap-5xs);
+  }
