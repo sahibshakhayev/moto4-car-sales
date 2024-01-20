@@ -1,0 +1,44 @@
+body {
+  background-color: var(--background-full-page);
+  font-family: sans-serif;
+
+}
+
+
+.faqContainer {
+  padding: 60px 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.faqContainer .faqTitle {
+  color: var(--Text-purple, #620985);
+  font-family: Inter;
+  font-size: 28px;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  line-height: normal;
+}
+.faqContainer .purple {
+  color: var(--Text-purple, #620985);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  margin-bottom: 16px;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.faqContainer .faqItem {
+  border: 1px solid #620985;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  padding: 16px;
+}
+
+.faqContainer .faqContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

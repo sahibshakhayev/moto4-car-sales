@@ -11,9 +11,11 @@ const Navbar:FunctionComponent = () => {
   
     return (
         <div className={styles.navbar}>
+          <Link to={"/"}>
         <div className={styles["logo-con"]}>
           <img className="logo" alt="" src="/assets/img/image-4@2x.png" />
         </div>
+        </Link>
         <div className={styles["page-links"]}>
           <div className={styles["page-names"]}>
             <div className={styles["pagename-con"]}>
