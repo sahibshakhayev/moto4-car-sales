@@ -53,6 +53,7 @@
     top: 8px;
     left: 228px;
     width: 28px;
+    z-index: 99;
     height: 28px;
   }
   .carimage {
@@ -135,6 +136,4 @@
     gap: var(--gap-5xs);
   }
 
-  .card * {
-
-  }
+  

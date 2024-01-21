@@ -5,6 +5,7 @@ import "../../global.css"
 import Navbar from "../../components/navbar/Navbar";
 import Card from "../../components/card/Card";
 import Coment from "../../components/comments/Coment";
+import Footer from "../../components/footer/Footer";
 
 interface ProductPageProps {
 
@@ -20,8 +21,6 @@ interface ProductPageProps {
 
 const ProductPage: FunctionComponent<ProductPageProps> = ({ads}:ProductPageProps) => {
     const [ImgSrc, setImage]  = useState("/assets/img/image-7@2x.png"); 
-        
-    alert("Nümünə olduğuna görə bütün səyfələr eynidir!")
     
   return (
    
@@ -123,6 +122,7 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({ads}:ProductPageProps
         <Card car={ads[3]} />
         <Card car={ads[4]} />
       </div>
+      <Footer/>
     </div>
     </>
   );

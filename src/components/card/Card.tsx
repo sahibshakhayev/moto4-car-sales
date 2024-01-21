@@ -21,7 +21,7 @@ const Card:FunctionComponent<CardProps>= ({car}: CardProps ) => {
     const[carLiked, setLiked] = useState(car.liked);
 
     return (
-        <Link to={"/product/" + car.id} >
+        
         <div className={styles.card}>
         <div className={styles.carimage}>
           <div className={styles.carphoto}>
@@ -44,6 +44,7 @@ const Card:FunctionComponent<CardProps>= ({car}: CardProps ) => {
            }
           <img className={styles["heart-icon"]} alt="liked-icon" onClick={() => setLiked(!carLiked)} src={carLiked ? "/assets/icons/heart.svg" : "/assets/icons/heart-icon.svg"} />
         </div>
+        <Link to={"/product/" + car.id}>
         <div className={styles["about-car"]}>
           <div className={styles["car-datas"]}>
             <div className={styles["brand-model"]}>{car.brand + " " + car.model}</div>
@@ -57,8 +58,9 @@ const Card:FunctionComponent<CardProps>= ({car}: CardProps ) => {
             </div>
           </div>
         </div>
+        </Link>
       </div>
-      </Link>
+      
     );
   };
   
