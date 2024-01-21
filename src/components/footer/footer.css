@@ -3,9 +3,10 @@
     display: flex;
 width: 100%;
 bottom: 0;
-padding: 20px 350px 20px 130px;
+padding: 100px 350px 20px 130px;
 justify-content: center;
 align-items: flex-start;
+width: 55%;
 gap: 73px;
     
 
@@ -25,6 +26,27 @@ gap: 73px;
 
 
 
+
+}
+
+
+.part1 span {
+    color: var(--Text-black, #1A1A1A);
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+
+
+}
+
+.part1 .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
 }
 
 .part2 {
@@ -33,5 +55,50 @@ gap: 73px;
     align-items: flex-start;
     gap: 154px;
 
+
+}
+
+
+ .help, .company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+
+}
+
+
+ .head {
+
+    color: var(--Text-black, #1A1A1A);
+    -webkit-text-stroke-width: 0.20000000298023224;
+    -webkit-text-stroke-color: var(--Text-black, #1A1A1A);
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px; /* 100% */
+    letter-spacing: 0.36px;
+
+}
+
+.types {
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+
+}
+
+.link {
+    color: var(--Text-black, #1A1A1A);
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
+    letter-spacing: 0.3px;
 
 }

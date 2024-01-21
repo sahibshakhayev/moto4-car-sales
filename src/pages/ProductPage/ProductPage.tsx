@@ -122,8 +122,9 @@ const ProductPage: FunctionComponent<ProductPageProps> = ({ads}:ProductPageProps
         <Card car={ads[3]} />
         <Card car={ads[4]} />
       </div>
-      <Footer/>
+      
     </div>
+    <Footer/>
     </>
   );
 };
