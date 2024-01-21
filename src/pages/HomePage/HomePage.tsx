@@ -64,8 +64,10 @@ const HomePage: FunctionComponent<HomePageProps> = ({ads}:HomePageProps) => {
       condition: filter.condition,
     };
   
+     const filtred = ads.filter((car) => car.brand.toLowerCase() == params.brand);
 
-   
+     setData(filtred);
+
 
 
     
