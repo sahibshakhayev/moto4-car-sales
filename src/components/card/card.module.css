@@ -25,6 +25,10 @@
     transform: rotate(-39.9deg);
     transform-origin: 0 0;
   }
+
+  .s-text{
+    color: white;
+  }
   .union-icon {
     position: relative;
     width: 22.62px;
@@ -129,4 +133,8 @@
     flex-direction: column;
     padding: var(--padding-5xs);
     gap: var(--gap-5xs);
+  }
+
+  .card * {
+
   }

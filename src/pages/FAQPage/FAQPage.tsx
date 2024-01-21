@@ -1,5 +1,5 @@
 import { FunctionComponent} from "react";
-import styles from "./faq.module.css";
+import styles from "./FAQPage.css";
 import Navbar from "../../components/navbar/Navbar";
 const FAQPage: FunctionComponent = () => {
   return (

@@ -3,10 +3,11 @@ import "../../../src/global.css";
 
 
 import styles from  "./card.module.css";
+import { Link } from "react-router-dom";
 
 
 interface CardProps {
-    car: { image_src: string; brand: string; model: string; year:number; driven:number;status: string;
+    car: { id: number; image_src: string; brand: string; model: string; year:number; driven:number;status: string;
         predicted: boolean,
         value:number,     
         price: number,
@@ -20,6 +21,7 @@ const Card:FunctionComponent<CardProps>= ({car}: CardProps ) => {
     const[carLiked, setLiked] = useState(car.liked);
 
     return (
+        <Link to={"/product/" + car.id} >
         <div className={styles.card}>
         <div className={styles.carimage}>
           <div className={styles.carphoto}>
@@ -31,7 +33,7 @@ const Card:FunctionComponent<CardProps>= ({car}: CardProps ) => {
           </div>
           {car.status == "new" && 
           <div className={styles.salon}>
-            <div className={styles["text-4"]}>Salon</div>
+            <div className={styles["text-4"] + " " + styles["s-text"]}>Salon</div>
           </div>
            }
       
@@ -56,6 +58,7 @@ const Card:FunctionComponent<CardProps>= ({car}: CardProps ) => {
           </div>
         </div>
       </div>
+      </Link>
     );
   };
   
